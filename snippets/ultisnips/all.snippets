@@ -1,0 +1,22 @@
+snippet dd "day~"
+`date '+%Y/%m/%d'`
+endsnippet
+
+snippet date "date~"
+`date '+%Y/%m/%d %H:%M:%S'`
+endsnippet
+
+snippet mark "mark~"
+`date '+%Y/%m/%d'`: $1
+endsnippet
+
+snippet de "descriptor"
+/** ${0} */
+endsnippet
+
+snippet box "Box"
+`!p snip.rv = '┌' + '─' * (len(t[1]) + 2) + '┐'`
+│ $1 │
+`!p snip.rv = '└' + '─' * (len(t[1]) + 2) + '┘'`
+$0
+endsnippet
